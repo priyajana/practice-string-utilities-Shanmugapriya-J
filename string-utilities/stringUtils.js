@@ -1,7 +1,8 @@
 
 // Capitalizes the first character of a string
 function capitalize(str){
-    if(str=="" || str == undefined || Number(str)!=NaN){
+    
+    if(str==="" || !isNaN(str[0]) ){
         return "Invalid Input!";
     }
     return str[0].toUpperCase()+str.slice(1);
